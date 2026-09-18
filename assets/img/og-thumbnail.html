@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #0b3f3a 0%, #0d6b61 55%, #0d9488 100%);
+    position: relative;
+  }
+  .ring { border-radius: 50%; border: 1px solid rgba(255,255,255,0.06); position: absolute; }
+  .groove { position: absolute; top: 0; bottom: 0; width: 10px; background: rgba(255,255,255,0.05); }
+  .chip {
+    position: absolute; left: 80px; top: 86px;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b);
+    color: #08312c; font-size: 18px; font-weight: 700; letter-spacing: 1.5px;
+    padding: 11px 18px; border-radius: 14px;
+  }
+  .brand { position: absolute; left: 80px; top: 142px; color: #fff; font-size: 80px; font-weight: 800; line-height: 1; }
+  .rule { position: absolute; left: 86px; top: 242px; width: 120px; height: 7px; background: linear-gradient(90deg, #fbbf24, #f59e0b); border-radius: 4px; }
+  .tagline { position: absolute; left: 80px; top: 268px; color: #3ff4e0; font-size: 30px; font-weight: 500; letter-spacing: 4px; }
+  .headline { position: absolute; left: 80px; top: 322px; color: #eafffd; font-size: 31px; font-weight: 600; line-height: 1.35; }
+  .features { position: absolute; left: 80px; top: 470px; font-size: 21px; font-weight: 500; color: #c7fdf6; }
+  .features span::before { content:"✓  "; color:#fbbf24; font-weight:700; }
+  .contact { position: absolute; left: 80px; top: 540px; font-size: 20px; color: #fff; }
+  .contact .phone { color: #fbbf24; font-weight: 600; }
+  .contact .pipe { color: rgba(255,255,255,0.4); margin: 0 14px; }
+  .card { background: #fff; border-radius: 16px; position: absolute; box-shadow: 0 18px 40px rgba(0,0,0,0.30); overflow: hidden; }
+  .card img { width: 100%; object-fit: cover; display: block; }
+  .card .cap { font-size: 14px; font-weight: 700; padding: 10px 14px; }
+  .c1 { width: 196px; height: 146px; left: 768px; top: 46px; }
+  .c1 img { height: 116px; } .c1 .cap { color: #134e4a; }
+  .c2 { width: 232px; height: 166px; left: 890px; top: 196px; }
+  .c2 img { height: 132px; } .c2 .cap { color: #155e75; }
+  .c3 { width: 196px; height: 146px; left: 790px; top: 390px; }
+  .c3 img { height: 116px; } .c3 .cap { color: #713f12; }
+  .fluted { position: absolute; left: 1024px; top: 500px; width: 120px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.10); color: #c7fdf6; font-size: 13px; font-weight: 600; text-align: center; line-height: 44px; }
+</style>
+</head>
+<body>
+  <div class="ring" style="width:1120px;height:1120px;right:-560px;bottom:-560px;border-width:40px;"></div>
+  <div class="ring" style="width:840px;height:840px;right:-420px;bottom:-420px;border-width:24px;"></div>
+  <div class="ring" style="width:520px;height:520px;left:-260px;top:40px;border-width:30px;"></div>
+  <div class="groove" style="right:70px;"></div>
+  <div class="groove" style="right:45px;"></div>
+  <div class="groove" style="right:20px;"></div>
+
+  <div class="chip">PREMIUM PVC INTERIORS</div>
+  <div class="brand">SAI DARSHAN</div>
+  <div class="rule"></div>
+  <div class="tagline">QUALITY INTERIORS</div>
+  <div class="headline">Premium PVC Wall Panels,<br>UV Sheets, WPC Louvers &amp;<br>Fluted &amp; Soffit Panels.</div>
+  <div class="features">
+    <span>100% Waterproof</span>&nbsp;&nbsp;&nbsp;
+    <span>Termite-Proof</span>&nbsp;&nbsp;&nbsp;
+    <span>Pan-India Delivery</span>
+  </div>
+  <div class="contact"><span class="phone">+91 98236 82949</span><span class="pipe">|</span>info@saipvcpanels.com</div>
+
+  <div class="card c1"><img src="advance/p10.jpg" alt=""><div class="cap">PVC Wall Panels</div></div>
+  <div class="card c2"><img src="panels/uv/digi-1260.jpg" alt=""><div class="cap">UV Sheets</div></div>
+  <div class="card c3"><img src="panels/wpc/2304-b.jpg" alt=""><div class="cap">WPC Louvers</div></div>
+  <div class="fluted">Fluted Panels</div>
+</body>
+</html>

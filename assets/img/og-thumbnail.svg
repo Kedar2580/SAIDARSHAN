@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b3f3a"/>
+      <stop offset="0.55" stop-color="#0d6b61"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+
+  <!-- decorative rings -->
+  <circle cx="1180" cy="1180" r="560" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="40"/>
+  <circle cx="1180" cy="1180" r="420" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="24"/>
+  <circle cx="-60" cy="150" r="260" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="30"/>
+
+  <!-- subtle fluted grooves on right edge -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="10">
+    <line x1="1130" y1="0" x2="1130" y2="630"/>
+    <line x1="1155" y1="0" x2="1155" y2="630"/>
+    <line x1="1180" y1="0" x2="1180" y2="630"/>
+  </g>
+
+  <!-- ============ CONTENT (0 .. 630) ============ -->
+
+  <!-- top gold chip -->
+  <rect x="80" y="96" rx="14" width="340" height="42" fill="url(#gold)"/>
+  <text x="96" y="124" font-family="Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" fill="#08312c" letter-spacing="1.5">PREMIUM PVC INTERIORS</text>
+
+  <!-- brand -->
+  <text x="80" y="245" font-family="Helvetica Neue, Arial, sans-serif" font-size="112" font-weight="800" fill="#ffffff">SAI DARSHAN</text>
+  <rect x="86" y="272" width="120" height="7" rx="3.5" fill="url(#gold)"/>
+  <text x="80" y="318" font-family="Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="500" fill="#3ff4e0" letter-spacing="4">QUALITY INTERIORS</text>
+
+  <!-- headline -->
+  <text x="80" y="402" font-family="Helvetica Neue, Arial, sans-serif" font-size="31" font-weight="600" fill="#eafffd">Premium PVC Wall Panels,</text>
+  <text x="80" y="444" font-family="Helvetica Neue, Arial, sans-serif" font-size="31" font-weight="600" fill="#eafffd">UV Sheets, WPC Louvers &amp;</text>
+  <text x="80" y="486" font-family="Helvetica Neue, Arial, sans-serif" font-size="31" font-weight="600" fill="#eafffd">Fluted &amp; Soffit Panels.</text>
+
+  <!-- features -->
+  <g font-family="Helvetica Neue, Arial, sans-serif" font-size="21" font-weight="500" fill="#c7fdf6">
+    <text x="80" y="548">&#10003;&#xFE0E;  100% Waterproof</text>
+    <text x="305" y="548">&#10003;&#xFE0E;  Termite-Proof</text>
+    <text x="578" y="548">&#10003;&#xFE0E;  Pan-India Delivery</text>
+  </g>
+
+  <!-- contact -->
+  <text x="80" y="594" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff">
+    <tspan fill="#fbbf24" font-weight="600">+91 98236 82949</tspan><tspan fill="#ffffff" fill-opacity="0.4">   |   </tspan>info@saipvcpanels.com
+  </text>
+
+  <!-- ============ PRODUCT CARDS (no transforms) ============ -->
+
+  <!-- card 1: PVC wall panel (wood) -->
+  <rect x="768" y="64" rx="16" width="196" height="146" fill="#ffffff"/>
+  <image x="768" y="64" width="196" height="116" href="advance/p10.jpg" preserveAspectRatio="xMidYMid slice"/>
+  <text x="784" y="198" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#134e4a">PVC Wall Panels</text>
+
+  <!-- card 2: UV sheet -->
+  <rect x="874" y="206" rx="16" width="232" height="166" fill="#ffffff"/>
+  <image x="874" y="206" width="232" height="132" href="panels/uv/digi-1260.jpg" preserveAspectRatio="xMidYMid slice"/>
+  <text x="890" y="356" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#155e75">UV Sheets</text>
+
+  <!-- card 3: WPC louver -->
+  <rect x="790" y="398" rx="16" width="196" height="146" fill="#ffffff"/>
+  <image x="790" y="398" width="196" height="116" href="panels/wpc/2304-b.jpg" preserveAspectRatio="xMidYMid slice"/>
+  <text x="806" y="532" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#713f12">WPC Louvers</text>
+
+  <!-- fluted accent chip bottom right -->
+  <rect x="1012" y="500" rx="12" width="120" height="44" fill="#ffffff" fill-opacity="0.10"/>
+  <text x="1028" y="528" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#c7fdf6">Fluted Panels</text>
+</svg>
