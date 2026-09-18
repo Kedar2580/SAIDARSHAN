@@ -931,8 +931,8 @@ ul {
 /* ---------- Panel collection cards ---------- */
 .panel-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 .panel-card {
   background: var(--white);
@@ -950,7 +950,7 @@ ul {
 }
 .panel-media {
   position: relative;
-  height: 220px;
+  height: 380px;
   overflow: hidden;
 }
 .panel-media img {
@@ -1567,7 +1567,10 @@ ul {
   }
 
   .panel-media {
-    height: 190px;
+    height: 260px;
+  }
+  .panel-grid {
+    grid-template-columns: 1fr;
   }
   .panel-meta {
     flex-direction: column;
