@@ -1405,8 +1405,8 @@ ul {
     display: flex;
   }
   .nav-menu {
-    position: fixed;
-    top: 116px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -1443,6 +1443,16 @@ ul {
   }
   .nav-menu > li > a {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .specsheet {
+    grid-template-columns: 1fr;
+    gap: 22px;
   }
 }
 
@@ -1505,5 +1515,110 @@ ul {
   .footer-bottom {
     justify-content: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .section-head {
+    margin-bottom: 36px;
+  }
+  .page-banner {
+    padding: 50px 16px;
+  }
+  .page-banner h1 {
+    font-size: 28px;
+  }
+
+  .brand-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .brand-name {
+    font-size: 17px;
+  }
+
+  .topbar span:nth-child(1) {
+    display: none;
+  }
+
+  .category-thumb {
+    height: 170px;
+  }
+  .product-card .thumb {
+    height: 150px;
+  }
+
+  .panel-media {
+    height: 190px;
+  }
+  .panel-meta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    text-align: center;
+  }
+  .panel-meta .btn {
+    width: 100%;
+  }
+
+  .catalog-filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .filter-btn {
+    text-align: center;
+    padding: 12px 10px;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 18px;
+  }
+  .hero-stats .stat h3 {
+    font-size: 24px;
+  }
+
+  .about-media .floating-card {
+    position: static;
+    margin-top: 14px;
+  }
+
+  .product-gallery .main-thumb {
+    height: 260px;
+  }
+
+  .cta-band {
+    padding: 36px 20px;
+  }
+  .cta-band h2 {
+    font-size: 26px;
+  }
+
+  .product-cta .btn,
+  .hero-cta .btn,
+  .collection-note .btn,
+  .dealer-form-wrap .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .specsheet {
+    padding: 22px 16px;
+  }
+
+  .footer-grid {
+    gap: 28px;
+  }
+  .footer-bottom {
+    gap: 8px;
   }
 }
