@@ -32,9 +32,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
 
+  function closeSubmenus() {
+    navMenu.querySelectorAll(".has-subnav.open").forEach(function (li) {
+      li.classList.remove("open");
+    });
+  }
+
   function toggleNav() {
+    const willClose = navMenu.classList.contains("open");
     hamburger.classList.toggle("open");
     navMenu.classList.toggle("open");
+    if (willClose) closeSubmenus();
   }
 
   if (hamburger && navMenu) {
@@ -59,10 +67,26 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (e) {
       if (window.innerWidth <= 992) {
         e.preventDefault();
+        closeSubmenus();
         link.parentElement.classList.toggle("open");
       }
     });
   });
+
+  /* ---------- Close menu on link click ---------- */
+  if (hamburger && navMenu) {
+    navMenu.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        if (window.innerWidth <= 992 && !a.closest(".has-subnav > a")) {
+          if (navMenu.classList.contains("open")) {
+            hamburger.classList.remove("open");
+            navMenu.classList.remove("open");
+            closeSubmenus();
+          }
+        }
+      });
+    });
+  }
 
   /* ---------- Catalog filtering ---------- */
   const filterBtns = document.querySelectorAll(".filter-btn");

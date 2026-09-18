@@ -1409,20 +1409,30 @@ ul {
     top: 100%;
     left: 0;
     right: 0;
+    display: none;
     flex-direction: column;
     align-items: stretch;
     background: var(--white);
     box-shadow: var(--shadow-lg);
     padding: 20px;
     gap: 4px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease;
     border-bottom: 1px solid #e2e8f0;
+    max-height: calc(100vh - 76px);
+    overflow-y: auto;
   }
   .nav-menu.open {
-    max-height: 100vh;
-    overflow-y: auto;
+    display: flex;
+    animation: menuIn 0.25s ease;
+  }
+  @keyframes menuIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .dropdown {
     position: static;
